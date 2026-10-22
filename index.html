@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171613">
+<meta name="description" content="BeBo & Dona — Our Wedding, 19 November 2026">
+<title>BeBo & Dona | Our Wedding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#171613;--cream:#f4eee3;--gold:#c7ae87;--muted:#bdb3a4;--line:rgba(199,174,135,.45)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--cream);font-family:"Cormorant Garamond",serif}a{color:inherit}
+.nav{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:24px clamp(20px,7vw,100px);gap:18px}.monogram{font-family:"Cormorant Garamond",serif;font-size:43px;line-height:.9;letter-spacing:-.12em;color:var(--cream);font-weight:500;border:1px solid var(--line);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;padding-right:5px}.navlinks{display:flex;gap:clamp(12px,3vw,36px);font:10px Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase}.navlinks a{text-decoration:none;opacity:.9}.lang-toggle{border:1px solid var(--line);background:transparent;color:var(--cream);padding:7px 10px;font:10px Arial,sans-serif;cursor:pointer}.hero{min-height:100svh;position:relative;display:flex;align-items:center;overflow:hidden;background:#151515}.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 58%;} .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,9,11,.84) 0%,rgba(8,9,11,.52) 39%,rgba(8,9,11,.06) 78%),linear-gradient(0deg,rgba(8,9,11,.42),transparent 35%,rgba(8,9,11,.15));pointer-events:none}
+.hero-copy{position:relative;z-index:1;padding:130px clamp(24px,10vw,150px) 80px;max-width:720px}.eyebrow{font:10px Arial,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}h1{font-size:clamp(64px,10vw,132px);font-weight:500;line-height:.77;letter-spacing:-.055em;margin:24px 0 26px}h1 span{display:block;font-style:italic}.script{font-style:italic;font-size:clamp(26px,4vw,43px);color:var(--gold);margin:0 0 26px}.date{font-size:19px;letter-spacing:.3em;margin:0 0 30px}.outline-btn{display:inline-block;border:1px solid var(--gold);padding:15px 23px;text-decoration:none;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;transition:.25s}.outline-btn:hover{background:var(--cream);color:var(--ink)}.side-note{position:absolute;right:clamp(20px,6vw,80px);bottom:70px;z-index:2;color:var(--cream);font-style:italic;font-size:25px;line-height:1.05;text-align:right;border-right:1px solid var(--gold);padding-right:15px}
+.section{padding:clamp(65px,9vw,120px) clamp(22px,9vw,130px)}.story{background:var(--cream);color:var(--ink);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,7vw,100px);align-items:center}.story-photo-wrap{border:1px solid #c5b7a1;padding:10px;transform:rotate(-1deg);max-width:480px}.story-photo{display:block;width:100%;height:auto;object-fit:contain}.story h2,.events h2{font-size:clamp(43px,6vw,72px);font-weight:500;line-height:.92;margin:17px 0 24px;letter-spacing:-.035em}.story p{font-size:20px;line-height:1.5;max-width:420px}.signature{font-size:34px;font-style:italic;color:#86745c;margin-top:26px}.events{background:#211f1a;color:var(--cream);text-align:center}.events h2{font-size:clamp(40px,6vw,65px)}.count-label{font:10px Arial,sans-serif;letter-spacing:.3em;color:var(--gold);margin:35px 0 20px}.countdown{display:flex;justify-content:center;gap:0;margin:0 auto 60px;max-width:650px}.time{flex:1;border-right:1px solid var(--line);padding:12px 8px}.time:last-child{border:0}.time strong{display:block;font-size:clamp(30px,5vw,48px);font-weight:400}.time span{font:9px Arial,sans-serif;letter-spacing:.2em;color:var(--muted)}.event-grid{display:grid;grid-template-columns:1fr 1fr;max-width:850px;margin:auto;border-top:1px solid var(--line);padding-top:38px;gap:28px}.event{padding:10px}.event h3{font-size:30px;font-weight:500;margin:8px 0}.event p{font-size:17px;color:var(--muted);margin:7px 0 20px}.event a{font:10px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:5px}.rsvp{text-align:center;background:var(--cream);color:var(--ink);padding:65px 20px 75px}.rsvp .monogram{margin:0 auto 22px;color:var(--ink);border-color:#bca989}.rsvp h2{font-size:clamp(38px,6vw,65px);font-weight:500;margin:12px 0}.rsvp p{font-size:20px}.footer{padding:24px;text-align:center;background:var(--ink);color:var(--muted);font:10px Arial,sans-serif;letter-spacing:.12em}
+@media(max-width:700px){.nav{padding:18px;align-items:flex-start}.monogram{width:46px;height:46px;font-size:35px}.navlinks{gap:10px;flex-wrap:wrap;justify-content:flex-end;max-width:72%;font-size:8px;letter-spacing:.1em}.hero{min-height:88svh;align-items:flex-end}.hero-photo{object-position:58% center}.hero:after{background:linear-gradient(0deg,rgba(5,6,7,.82),rgba(5,6,7,.2) 65%,rgba(5,6,7,.15))}.hero-copy{padding:180px 24px 90px}h1{font-size:clamp(62px,16vw,100px)}.side-note{display:none}.story{grid-template-columns:1fr;gap:35px}.story-photo-wrap{max-width:100%;width:100%;transform:none}.story h2{font-size:54px}.event-grid{grid-template-columns:1fr;gap:24px}.event+ .event{border-top:1px solid var(--line);padding-top:28px}.countdown{margin-bottom:42px}.time{padding:10px 3px}.time span{font-size:8px;letter-spacing:.1em}.date{font-size:16px;letter-spacing:.2em}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+[dir="rtl"] body{font-family:"Cairo",sans-serif}[dir="rtl"] .hero-copy{text-align:right}[dir="rtl"] .hero:after{background:linear-gradient(270deg,rgba(8,9,11,.84) 0%,rgba(8,9,11,.52) 39%,rgba(8,9,11,.06) 78%),linear-gradient(0deg,rgba(8,9,11,.42),transparent 35%,rgba(8,9,11,.15))}[dir="rtl"] .side-note{right:auto;left:clamp(20px,6vw,80px);text-align:left;border-right:0;border-left:1px solid var(--gold);padding-right:0;padding-left:15px}[dir="rtl"] .navlinks{letter-spacing:0}[dir="rtl"] .date{letter-spacing:.12em}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="monogram" href="#home" aria-label="BD monogram">BD</a>
+  <nav class="navlinks"><a href="#home">Home</a><a href="#story">Our Story</a><a href="#events">Details</a><a href="#rsvp">RSVP</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <img class="hero-photo" src="couple-sunset.jpeg" alt="BeBo and Dona together at sunset">
+  <div class="hero-copy">
+    <div class="eyebrow" data-en="Together, forever" data-ar="معًا إلى الأبد">Together, forever</div>
+    <h1>BeBo &amp;<span>Dona</span></h1>
+    <p class="script" data-en="Our Wedding" data-ar="فرحنا">Our Wedding</p>
+    <p class="date">19 · 11 · 2026</p>
+    <a class="outline-btn" href="#story" data-en="Open Invitation&nbsp; →" data-ar="افتح الدعوة&nbsp; ←">Open Invitation&nbsp; →</a>
+  </div>
+  <div class="side-note">Two hearts<br>One story<br>Forever</div>
+</section>
+<section class="section story" id="story">
+  <div class="story-photo-wrap"><img class="story-photo" src="couple-selfie.jpeg" alt="Original selfie of BeBo and Dona"></div>
+  <div><div class="eyebrow" data-en="A little about us" data-ar="حكايتنا">A little about us</div><h2 data-en="Two Souls<br>One Journey" data-ar="روحان<br>ورحلة واحدة">Two Souls<br>One Journey</h2><p data-en="From the first moment, we knew this was more than just a story. It was the beginning of forever." data-ar="من أول لحظة عرفنا إن دي مش مجرد حكاية، دي بداية عمر كامل مع بعض.">From the first moment, we knew this was more than just a story. It was the beginning of forever.</p><div class="signature">BeBo &amp; Dona</div></div>
+</section>
+<section class="section events" id="events">
+  <div class="eyebrow" data-en="Save the date" data-ar="سجلوا معادنا">Save the date</div><h2 data-en="The Big Day" data-ar="يومنا الكبير">The Big Day</h2>
+  <div class="count-label" data-en="COUNTING DOWN TO OUR WEDDING" data-ar="العد التنازلي لفرحنا">COUNTING DOWN TO OUR WEDDING</div>
+  <div class="countdown" aria-live="polite">
+    <div class="time"><strong id="days">--</strong><span data-en="DAYS" data-ar="يوم">DAYS</span></div><div class="time"><strong id="hours">--</strong><span data-en="HOURS" data-ar="ساعة">HOURS</span></div><div class="time"><strong id="minutes">--</strong><span data-en="MINUTES" data-ar="دقيقة">MINUTES</span></div><div class="time"><strong id="seconds">--</strong><span data-en="SECONDS" data-ar="ثانية">SECONDS</span></div>
+  </div>
+  <div class="event-grid">
+    <div class="event"><div class="eyebrow" data-en="Ceremony" data-ar="الكنيسة">Ceremony</div><h3 data-en="St. George Church" data-ar="كنيسة مارجرجس">St. George Church</h3><p data-en="19 November 2026 · 9:00 PM<br>Assiut, Egypt" data-ar="١٩ نوفمبر ٢٠٢٦ · الساعة ٩ مساءً<br>أسيوط، مصر">19 November 2026 · 9:00 PM<br>Assiut, Egypt</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=St+George+Church+Assiut+Egypt" data-en="View Location ↗" data-ar="عرض الموقع ↗">View Location ↗</a></div>
+    <div class="event"><div class="eyebrow" data-en="Celebration" data-ar="الاحتفال">Celebration</div><h3 data-en="Castel Hall" data-ar="قاعة كاستل">Castel Hall</h3><p data-en="19 November 2026<br>Assiut, Egypt" data-ar="١٩ نوفمبر ٢٠٢٦<br>أسيوط، مصر">19 November 2026<br>Assiut, Egypt</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Castel+Hall+Assiut+Egypt" data-en="View Location ↗" data-ar="عرض الموقع ↗">View Location ↗</a></div>
+  </div>
+</section>
+<section class="rsvp" id="rsvp"><div class="monogram">BD</div><div class="eyebrow" data-en="With love" data-ar="بكل حب">With love</div><h2 data-en="We can’t wait to celebrate with you." data-ar="مستنيين نحتفل معاكم.">We can’t wait to celebrate with you.</h2><p data-en="BeBo &amp; Dona · 19 November 2026" data-ar="بيبو ودونا · ١٩ نوفمبر ٢٠٢٦">BeBo &amp; Dona · 19 November 2026</p></section>
+</main>
+<footer class="footer" data-en="MADE WITH LOVE · BEBO &amp; DONA" data-ar="بكل حب · بيبو ودونا">MADE WITH LOVE · BEBO &amp; DONA</footer>
+<script>
+const target = new Date('2026-11-19T21:00:00+02:00').getTime();
+function updateCountdown(){
+ const diff=target-Date.now();
+ if(diff<=0){['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).textContent='00');return;}
+ const values={days:Math.floor(diff/86400000),hours:Math.floor(diff%86400000/3600000),minutes:Math.floor(diff%3600000/60000),seconds:Math.floor(diff%60000/1000)};
+ Object.entries(values).forEach(([id,value])=>document.getElementById(id).textContent=String(value).padStart(2,'0'));
+}
+updateCountdown();setInterval(updateCountdown,1000);
+const langToggle=document.getElementById('langToggle');
+function setLanguage(lang){
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ document.querySelectorAll('[data-en][data-ar]').forEach(el=>{el.innerHTML=el.dataset[lang];});
+ langToggle.textContent=lang==='ar'?'English':'عربي';
+ try{localStorage.setItem('bebo-dona-lang',lang)}catch(e){}
+}
+langToggle.addEventListener('click',()=>setLanguage(document.documentElement.lang==='en'?'ar':'en'));
+
+</script>
+</body>
+</html>
